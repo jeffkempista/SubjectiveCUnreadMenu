@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nop-IE-zbo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--String Expand View Controller - Spring Expand View-->
+        <scene sceneID="zjW-lr-4d5">
+            <objects>
+                <viewController id="jPc-KA-BAO" customClass="JAKStringExpandViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ibY-3r-akO"/>
+                        <viewControllerLayoutGuide type="bottom" id="sMz-az-Dwj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LE9-Uy-jUg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEg-10-iSG" customClass="JAKSpringExpandView">
+                                <rect key="frame" x="20" y="78" width="30" height="155"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQ8-Zz-vVw">
+                                <rect key="frame" x="107" y="293" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Expand">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="Collapse"/>
+                                <connections>
+                                    <action selector="expandCollapseButtonTapped:" destination="jPc-KA-BAO" eventType="touchUpInside" id="Xtg-aR-sIL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Spring Expand View" id="8Xr-Nj-3MP"/>
+                    <connections>
+                        <outlet property="springExpandView" destination="eEg-10-iSG" id="qjQ-3a-XMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCY-yO-quf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="-84"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oKS-9v-aEM">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="nop-IE-zbo" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Sg3-bc-jaS">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jPc-KA-BAO" kind="relationship" relationship="viewControllers" id="YkV-4F-qqV"/>
+                        <segue destination="nyg-4h-P6v" kind="relationship" relationship="viewControllers" id="JH7-k1-LAK"/>
+                        <segue destination="cUA-gX-va4" kind="relationship" relationship="viewControllers" id="sQy-BL-j0C"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erG-Rd-J1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="321"/>
+        </scene>
+        <!--ContentW Ith Menu View Controller - Content with Menu-->
+        <scene sceneID="YXL-gg-UV1">
+            <objects>
+                <viewController id="cUA-gX-va4" customClass="JAKContentWIthMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tig-Js-NUq"/>
+                        <viewControllerLayoutGuide type="bottom" id="G6G-d7-zTf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oiu-3K-AVb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGN-7l-PpY">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-Xd-YaS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysq-OS-nJV" customClass="JAKDragAffordanceView">
+                                        <rect key="frame" x="320" y="225" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JoQ-gT-eHe"/>
+                                            <constraint firstAttribute="width" constant="50" id="mO8-uj-xrx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hd5-Xd-YaS" firstAttribute="top" secondItem="FGN-7l-PpY" secondAttribute="top" id="8i2-e2-m27"/>
+                                    <constraint firstAttribute="bottom" secondItem="hd5-Xd-YaS" secondAttribute="bottom" id="aRD-Cs-E2P"/>
+                                    <constraint firstItem="hd5-Xd-YaS" firstAttribute="leading" secondItem="FGN-7l-PpY" secondAttribute="leading" id="p0t-v7-zHD"/>
+                                    <constraint firstAttribute="trailing" secondItem="hd5-Xd-YaS" secondAttribute="trailing" id="yYX-Ug-lV9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ysq-OS-nJV" secondAttribute="trailing" constant="-50" id="zmQ-7F-Bqq"/>
+                                    <constraint firstAttribute="centerY" secondItem="Ysq-OS-nJV" secondAttribute="centerY" id="zwu-hP-gnG"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="cUA-gX-va4" id="2nv-ge-aX6"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G6G-d7-zTf" firstAttribute="top" secondItem="FGN-7l-PpY" secondAttribute="bottom" id="1eW-7v-svY"/>
+                            <constraint firstItem="FGN-7l-PpY" firstAttribute="leading" secondItem="Oiu-3K-AVb" secondAttribute="leading" id="49D-qK-bgG"/>
+                            <constraint firstItem="FGN-7l-PpY" firstAttribute="top" secondItem="tig-Js-NUq" secondAttribute="bottom" id="Eqm-Lj-qFx"/>
+                            <constraint firstAttribute="trailing" secondItem="FGN-7l-PpY" secondAttribute="trailing" id="Fc7-cW-6bb"/>
+                            <constraint firstItem="hd5-Xd-YaS" firstAttribute="top" secondItem="tig-Js-NUq" secondAttribute="bottom" id="GhI-dT-atp"/>
+                            <constraint firstItem="G6G-d7-zTf" firstAttribute="top" secondItem="hd5-Xd-YaS" secondAttribute="bottom" id="a8z-uo-XZI"/>
+                            <constraint firstItem="hd5-Xd-YaS" firstAttribute="width" secondItem="Oiu-3K-AVb" secondAttribute="width" id="fAb-Zt-7WF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Content with Menu" id="fIq-47-7pw"/>
+                    <connections>
+                        <outlet property="enclosingScrollView" destination="FGN-7l-PpY" id="zWW-sz-dCJ"/>
+                        <outlet property="menuDragAffordanceView" destination="Ysq-OS-nJV" id="8Le-wE-3wa"/>
+                        <outlet property="textView" destination="hd5-Xd-YaS" id="E0l-Qy-fBa"/>
+                        <segue destination="y8V-CN-hQd" kind="modal" identifier="PresentMenu" id="pY3-5c-XRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeV-fn-o63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="321"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tuc-iX-NKW">
+            <objects>
+                <viewController id="y8V-CN-hQd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Igp-iU-Lkz"/>
+                        <viewControllerLayoutGuide type="bottom" id="0it-fO-8E2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xcl-bb-qOn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeX-UP-Ua4">
+                                <rect key="frame" x="140" y="301" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i15-Hl-vxj" kind="unwind" unwindAction="unwindToContentWithMenuViewController:" id="fde-JE-53c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show a Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHc-G3-hxH">
+                                <rect key="frame" x="107" y="272" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jHc-G3-hxH" secondAttribute="centerX" id="2vX-49-AUl"/>
+                            <constraint firstItem="aeX-UP-Ua4" firstAttribute="top" secondItem="jHc-G3-hxH" secondAttribute="bottom" constant="8" id="3vt-2q-y4i"/>
+                            <constraint firstItem="jHc-G3-hxH" firstAttribute="top" secondItem="Igp-iU-Lkz" secondAttribute="bottom" constant="252" id="Uje-pF-430"/>
+                            <constraint firstItem="aeX-UP-Ua4" firstAttribute="centerX" secondItem="jHc-G3-hxH" secondAttribute="centerX" id="gHL-Z2-MmF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qdm-s3-hVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="i15-Hl-vxj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="321"/>
+        </scene>
+        <!--Drag Affordance View Controller - Drag Affordance View-->
+        <scene sceneID="6FJ-ET-1MR">
+            <objects>
+                <viewController id="nyg-4h-P6v" customClass="JAKDragAffordanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OCg-VK-7Sz"/>
+                        <viewControllerLayoutGuide type="bottom" id="CN9-Fc-i57"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tdz-Ff-JKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1.1000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="f1P-5P-CWf">
+                                <rect key="frame" x="18" y="385" width="284" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="dragSliderValueChanged:" destination="nyg-4h-P6v" eventType="valueChanged" id="aiu-Gd-Yqo"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mcs-lU-Kl1" customClass="JAKDragAffordanceView">
+                                <rect key="frame" x="20" y="93" width="70" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drag Affordance View" id="22b-61-fwu"/>
+                    <connections>
+                        <outlet property="dragAffordanceView" destination="Mcs-lU-Kl1" id="nJd-ya-CyV"/>
+                        <outlet property="dragSlider" destination="f1P-5P-CWf" id="N60-pk-2rL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3H-dP-pO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="669"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

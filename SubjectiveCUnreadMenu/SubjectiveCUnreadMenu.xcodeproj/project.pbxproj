@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F588A1C18EF1DFE0059AE12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F588A1B18EF1DFE0059AE12 /* Foundation.framework */; };
+		1F588A1E18EF1DFE0059AE12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F588A1D18EF1DFE0059AE12 /* CoreGraphics.framework */; };
+		1F588A2018EF1DFE0059AE12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F588A1F18EF1DFE0059AE12 /* UIKit.framework */; };
+		1F588A2618EF1DFE0059AE12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F588A2418EF1DFE0059AE12 /* InfoPlist.strings */; };
+		1F588A2818EF1DFE0059AE12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A2718EF1DFE0059AE12 /* main.m */; };
+		1F588A2C18EF1DFE0059AE12 /* JAKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A2B18EF1DFE0059AE12 /* JAKAppDelegate.m */; };
+		1F588A2F18EF1DFE0059AE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F588A2D18EF1DFE0059AE12 /* Main.storyboard */; };
+		1F588A3218EF1DFE0059AE12 /* JAKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A3118EF1DFE0059AE12 /* JAKViewController.m */; };
+		1F588A3418EF1DFE0059AE12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F588A3318EF1DFE0059AE12 /* Images.xcassets */; };
+		1F588A3B18EF1DFE0059AE12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F588A3A18EF1DFE0059AE12 /* XCTest.framework */; };
+		1F588A3C18EF1DFE0059AE12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F588A1B18EF1DFE0059AE12 /* Foundation.framework */; };
+		1F588A3D18EF1DFE0059AE12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F588A1F18EF1DFE0059AE12 /* UIKit.framework */; };
+		1F588A4518EF1DFE0059AE12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F588A4318EF1DFE0059AE12 /* InfoPlist.strings */; };
+		1F588A4718EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A4618EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.m */; };
+		1F588A5B18EF1E660059AE12 /* JAKContentWIthMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A5418EF1E660059AE12 /* JAKContentWIthMenuViewController.m */; };
+		1F588A5C18EF1E660059AE12 /* JAKDragAffordanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A5618EF1E660059AE12 /* JAKDragAffordanceViewController.m */; };
+		1F588A5D18EF1E660059AE12 /* JAKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A5818EF1E660059AE12 /* JAKMenuViewController.m */; };
+		1F588A5E18EF1E660059AE12 /* JAKStringExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A5A18EF1E660059AE12 /* JAKStringExpandViewController.m */; };
+		1F588A6918EF1E6E0059AE12 /* JAKOverlayDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A6118EF1E6E0059AE12 /* JAKOverlayDismissTransition.m */; };
+		1F588A6A18EF1E6E0059AE12 /* JAKOverlayPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A6318EF1E6E0059AE12 /* JAKOverlayPresentTransition.m */; };
+		1F588A6B18EF1E6E0059AE12 /* JAKDragAffordanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A6618EF1E6E0059AE12 /* JAKDragAffordanceView.m */; };
+		1F588A6C18EF1E6E0059AE12 /* JAKSpringExpandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F588A6818EF1E6E0059AE12 /* JAKSpringExpandView.m */; };
+		1F588A6E18EF20500059AE12 /* ArticleContent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F588A6D18EF20500059AE12 /* ArticleContent.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F588A3E18EF1DFE0059AE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F588A1018EF1DFE0059AE12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F588A1718EF1DFE0059AE12;
+			remoteInfo = SubjectiveCUnreadMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F588A1818EF1DFE0059AE12 /* SubjectiveCUnreadMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubjectiveCUnreadMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F588A1B18EF1DFE0059AE12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F588A1D18EF1DFE0059AE12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F588A1F18EF1DFE0059AE12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F588A2318EF1DFE0059AE12 /* SubjectiveCUnreadMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubjectiveCUnreadMenu-Info.plist"; sourceTree = "<group>"; };
+		1F588A2518EF1DFE0059AE12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F588A2718EF1DFE0059AE12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F588A2918EF1DFE0059AE12 /* SubjectiveCUnreadMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubjectiveCUnreadMenu-Prefix.pch"; sourceTree = "<group>"; };
+		1F588A2A18EF1DFE0059AE12 /* JAKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKAppDelegate.h; sourceTree = "<group>"; };
+		1F588A2B18EF1DFE0059AE12 /* JAKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKAppDelegate.m; sourceTree = "<group>"; };
+		1F588A2E18EF1DFE0059AE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F588A3018EF1DFE0059AE12 /* JAKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAKViewController.h; sourceTree = "<group>"; };
+		1F588A3118EF1DFE0059AE12 /* JAKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAKViewController.m; sourceTree = "<group>"; };
+		1F588A3318EF1DFE0059AE12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F588A3918EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubjectiveCUnreadMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F588A3A18EF1DFE0059AE12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F588A4218EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubjectiveCUnreadMenuTests-Info.plist"; sourceTree = "<group>"; };
+		1F588A4418EF1DFE0059AE12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F588A4618EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubjectiveCUnreadMenuTests.m; sourceTree = "<group>"; };
+		1F588A5318EF1E660059AE12 /* JAKContentWIthMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKContentWIthMenuViewController.h; sourceTree = "<group>"; };
+		1F588A5418EF1E660059AE12 /* JAKContentWIthMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKContentWIthMenuViewController.m; sourceTree = "<group>"; };
+		1F588A5518EF1E660059AE12 /* JAKDragAffordanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKDragAffordanceViewController.h; sourceTree = "<group>"; };
+		1F588A5618EF1E660059AE12 /* JAKDragAffordanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKDragAffordanceViewController.m; sourceTree = "<group>"; };
+		1F588A5718EF1E660059AE12 /* JAKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKMenuViewController.h; sourceTree = "<group>"; };
+		1F588A5818EF1E660059AE12 /* JAKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKMenuViewController.m; sourceTree = "<group>"; };
+		1F588A5918EF1E660059AE12 /* JAKStringExpandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKStringExpandViewController.h; sourceTree = "<group>"; };
+		1F588A5A18EF1E660059AE12 /* JAKStringExpandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKStringExpandViewController.m; sourceTree = "<group>"; };
+		1F588A6018EF1E6E0059AE12 /* JAKOverlayDismissTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKOverlayDismissTransition.h; sourceTree = "<group>"; };
+		1F588A6118EF1E6E0059AE12 /* JAKOverlayDismissTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKOverlayDismissTransition.m; sourceTree = "<group>"; };
+		1F588A6218EF1E6E0059AE12 /* JAKOverlayPresentTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKOverlayPresentTransition.h; sourceTree = "<group>"; };
+		1F588A6318EF1E6E0059AE12 /* JAKOverlayPresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKOverlayPresentTransition.m; sourceTree = "<group>"; };
+		1F588A6518EF1E6E0059AE12 /* JAKDragAffordanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKDragAffordanceView.h; sourceTree = "<group>"; };
+		1F588A6618EF1E6E0059AE12 /* JAKDragAffordanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKDragAffordanceView.m; sourceTree = "<group>"; };
+		1F588A6718EF1E6E0059AE12 /* JAKSpringExpandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAKSpringExpandView.h; sourceTree = "<group>"; };
+		1F588A6818EF1E6E0059AE12 /* JAKSpringExpandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAKSpringExpandView.m; sourceTree = "<group>"; };
+		1F588A6D18EF20500059AE12 /* ArticleContent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ArticleContent.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F588A1518EF1DFE0059AE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F588A1E18EF1DFE0059AE12 /* CoreGraphics.framework in Frameworks */,
+				1F588A2018EF1DFE0059AE12 /* UIKit.framework in Frameworks */,
+				1F588A1C18EF1DFE0059AE12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F588A3618EF1DFE0059AE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F588A3B18EF1DFE0059AE12 /* XCTest.framework in Frameworks */,
+				1F588A3D18EF1DFE0059AE12 /* UIKit.framework in Frameworks */,
+				1F588A3C18EF1DFE0059AE12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F588A0F18EF1DFE0059AE12 = {
+			isa = PBXGroup;
+			children = (
+				1F588A2118EF1DFE0059AE12 /* SubjectiveCUnreadMenu */,
+				1F588A4018EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests */,
+				1F588A1A18EF1DFE0059AE12 /* Frameworks */,
+				1F588A1918EF1DFE0059AE12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F588A1918EF1DFE0059AE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A1818EF1DFE0059AE12 /* SubjectiveCUnreadMenu.app */,
+				1F588A3918EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F588A1A18EF1DFE0059AE12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A1B18EF1DFE0059AE12 /* Foundation.framework */,
+				1F588A1D18EF1DFE0059AE12 /* CoreGraphics.framework */,
+				1F588A1F18EF1DFE0059AE12 /* UIKit.framework */,
+				1F588A3A18EF1DFE0059AE12 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F588A2118EF1DFE0059AE12 /* SubjectiveCUnreadMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A5218EF1E660059AE12 /* Controller */,
+				1F588A5F18EF1E6E0059AE12 /* Transitions */,
+				1F588A6418EF1E6E0059AE12 /* View */,
+				1F588A2A18EF1DFE0059AE12 /* JAKAppDelegate.h */,
+				1F588A2B18EF1DFE0059AE12 /* JAKAppDelegate.m */,
+				1F588A2D18EF1DFE0059AE12 /* Main.storyboard */,
+				1F588A3018EF1DFE0059AE12 /* JAKViewController.h */,
+				1F588A3118EF1DFE0059AE12 /* JAKViewController.m */,
+				1F588A3318EF1DFE0059AE12 /* Images.xcassets */,
+				1F588A2218EF1DFE0059AE12 /* Supporting Files */,
+			);
+			path = SubjectiveCUnreadMenu;
+			sourceTree = "<group>";
+		};
+		1F588A2218EF1DFE0059AE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A6D18EF20500059AE12 /* ArticleContent.plist */,
+				1F588A2318EF1DFE0059AE12 /* SubjectiveCUnreadMenu-Info.plist */,
+				1F588A2418EF1DFE0059AE12 /* InfoPlist.strings */,
+				1F588A2718EF1DFE0059AE12 /* main.m */,
+				1F588A2918EF1DFE0059AE12 /* SubjectiveCUnreadMenu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F588A4018EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A4618EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.m */,
+				1F588A4118EF1DFE0059AE12 /* Supporting Files */,
+			);
+			path = SubjectiveCUnreadMenuTests;
+			sourceTree = "<group>";
+		};
+		1F588A4118EF1DFE0059AE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A4218EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests-Info.plist */,
+				1F588A4318EF1DFE0059AE12 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F588A5218EF1E660059AE12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A5318EF1E660059AE12 /* JAKContentWIthMenuViewController.h */,
+				1F588A5418EF1E660059AE12 /* JAKContentWIthMenuViewController.m */,
+				1F588A5518EF1E660059AE12 /* JAKDragAffordanceViewController.h */,
+				1F588A5618EF1E660059AE12 /* JAKDragAffordanceViewController.m */,
+				1F588A5718EF1E660059AE12 /* JAKMenuViewController.h */,
+				1F588A5818EF1E660059AE12 /* JAKMenuViewController.m */,
+				1F588A5918EF1E660059AE12 /* JAKStringExpandViewController.h */,
+				1F588A5A18EF1E660059AE12 /* JAKStringExpandViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1F588A5F18EF1E6E0059AE12 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A6018EF1E6E0059AE12 /* JAKOverlayDismissTransition.h */,
+				1F588A6118EF1E6E0059AE12 /* JAKOverlayDismissTransition.m */,
+				1F588A6218EF1E6E0059AE12 /* JAKOverlayPresentTransition.h */,
+				1F588A6318EF1E6E0059AE12 /* JAKOverlayPresentTransition.m */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		1F588A6418EF1E6E0059AE12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F588A6518EF1E6E0059AE12 /* JAKDragAffordanceView.h */,
+				1F588A6618EF1E6E0059AE12 /* JAKDragAffordanceView.m */,
+				1F588A6718EF1E6E0059AE12 /* JAKSpringExpandView.h */,
+				1F588A6818EF1E6E0059AE12 /* JAKSpringExpandView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F588A1718EF1DFE0059AE12 /* SubjectiveCUnreadMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F588A4A18EF1DFE0059AE12 /* Build configuration list for PBXNativeTarget "SubjectiveCUnreadMenu" */;
+			buildPhases = (
+				1F588A1418EF1DFE0059AE12 /* Sources */,
+				1F588A1518EF1DFE0059AE12 /* Frameworks */,
+				1F588A1618EF1DFE0059AE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubjectiveCUnreadMenu;
+			productName = SubjectiveCUnreadMenu;
+			productReference = 1F588A1818EF1DFE0059AE12 /* SubjectiveCUnreadMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F588A3818EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F588A4D18EF1DFE0059AE12 /* Build configuration list for PBXNativeTarget "SubjectiveCUnreadMenuTests" */;
+			buildPhases = (
+				1F588A3518EF1DFE0059AE12 /* Sources */,
+				1F588A3618EF1DFE0059AE12 /* Frameworks */,
+				1F588A3718EF1DFE0059AE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F588A3F18EF1DFE0059AE12 /* PBXTargetDependency */,
+			);
+			name = SubjectiveCUnreadMenuTests;
+			productName = SubjectiveCUnreadMenuTests;
+			productReference = 1F588A3918EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F588A1018EF1DFE0059AE12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JAK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jeff Kempista";
+				TargetAttributes = {
+					1F588A3818EF1DFE0059AE12 = {
+						TestTargetID = 1F588A1718EF1DFE0059AE12;
+					};
+				};
+			};
+			buildConfigurationList = 1F588A1318EF1DFE0059AE12 /* Build configuration list for PBXProject "SubjectiveCUnreadMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F588A0F18EF1DFE0059AE12;
+			productRefGroup = 1F588A1918EF1DFE0059AE12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F588A1718EF1DFE0059AE12 /* SubjectiveCUnreadMenu */,
+				1F588A3818EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F588A1618EF1DFE0059AE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F588A3418EF1DFE0059AE12 /* Images.xcassets in Resources */,
+				1F588A6E18EF20500059AE12 /* ArticleContent.plist in Resources */,
+				1F588A2618EF1DFE0059AE12 /* InfoPlist.strings in Resources */,
+				1F588A2F18EF1DFE0059AE12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F588A3718EF1DFE0059AE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F588A4518EF1DFE0059AE12 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F588A1418EF1DFE0059AE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F588A5D18EF1E660059AE12 /* JAKMenuViewController.m in Sources */,
+				1F588A3218EF1DFE0059AE12 /* JAKViewController.m in Sources */,
+				1F588A5C18EF1E660059AE12 /* JAKDragAffordanceViewController.m in Sources */,
+				1F588A2818EF1DFE0059AE12 /* main.m in Sources */,
+				1F588A6B18EF1E6E0059AE12 /* JAKDragAffordanceView.m in Sources */,
+				1F588A5E18EF1E660059AE12 /* JAKStringExpandViewController.m in Sources */,
+				1F588A5B18EF1E660059AE12 /* JAKContentWIthMenuViewController.m in Sources */,
+				1F588A2C18EF1DFE0059AE12 /* JAKAppDelegate.m in Sources */,
+				1F588A6A18EF1E6E0059AE12 /* JAKOverlayPresentTransition.m in Sources */,
+				1F588A6C18EF1E6E0059AE12 /* JAKSpringExpandView.m in Sources */,
+				1F588A6918EF1E6E0059AE12 /* JAKOverlayDismissTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F588A3518EF1DFE0059AE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F588A4718EF1DFE0059AE12 /* SubjectiveCUnreadMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F588A3F18EF1DFE0059AE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F588A1718EF1DFE0059AE12 /* SubjectiveCUnreadMenu */;
+			targetProxy = 1F588A3E18EF1DFE0059AE12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F588A2418EF1DFE0059AE12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F588A2518EF1DFE0059AE12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F588A2D18EF1DFE0059AE12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F588A2E18EF1DFE0059AE12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F588A4318EF1DFE0059AE12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F588A4418EF1DFE0059AE12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F588A4818EF1DFE0059AE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F588A4918EF1DFE0059AE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F588A4B18EF1DFE0059AE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubjectiveCUnreadMenu/SubjectiveCUnreadMenu-Prefix.pch";
+				INFOPLIST_FILE = "SubjectiveCUnreadMenu/SubjectiveCUnreadMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F588A4C18EF1DFE0059AE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubjectiveCUnreadMenu/SubjectiveCUnreadMenu-Prefix.pch";
+				INFOPLIST_FILE = "SubjectiveCUnreadMenu/SubjectiveCUnreadMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F588A4E18EF1DFE0059AE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SubjectiveCUnreadMenu.app/SubjectiveCUnreadMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubjectiveCUnreadMenu/SubjectiveCUnreadMenu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SubjectiveCUnreadMenuTests/SubjectiveCUnreadMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1F588A4F18EF1DFE0059AE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SubjectiveCUnreadMenu.app/SubjectiveCUnreadMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubjectiveCUnreadMenu/SubjectiveCUnreadMenu-Prefix.pch";
+				INFOPLIST_FILE = "SubjectiveCUnreadMenuTests/SubjectiveCUnreadMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F588A1318EF1DFE0059AE12 /* Build configuration list for PBXProject "SubjectiveCUnreadMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F588A4818EF1DFE0059AE12 /* Debug */,
+				1F588A4918EF1DFE0059AE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F588A4A18EF1DFE0059AE12 /* Build configuration list for PBXNativeTarget "SubjectiveCUnreadMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F588A4B18EF1DFE0059AE12 /* Debug */,
+				1F588A4C18EF1DFE0059AE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F588A4D18EF1DFE0059AE12 /* Build configuration list for PBXNativeTarget "SubjectiveCUnreadMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F588A4E18EF1DFE0059AE12 /* Debug */,
+				1F588A4F18EF1DFE0059AE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F588A1018EF1DFE0059AE12 /* Project object */;
+}
